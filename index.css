@@ -39,7 +39,7 @@ nav a:link {
     content: "";
     background-image: url(penandthesword.png);
     position: absolute;
-    background-size: cover;
+    background-size:contain;
     background-repeat: repeat;
     background-attachment: scroll;
     top: 0;
