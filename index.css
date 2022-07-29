@@ -1,19 +1,20 @@
 header {
     display: flex;
-justify-content:center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    padding: 5px;
+    padding: 2px;
     z-index: 2;
+    margin-bottom: 2rem;
 
 }
 
 nav>ul>li {
     display: inline-flex;
-    Padding: 10px;
+    Padding: 8px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -23,27 +24,22 @@ nav>ul>li {
 
 nav a:visited,
 nav a:link {
-    color: white;
+    color: rgb(154, 150, 150);
     text-decoration: none;
 }
 
 .btn {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
     color: black;
-    padding: 12px 30px;
+    padding: 12px 10px;
     cursor: pointer;
     font-size: 20px;
     float: inline-end;
-    
-
 }
 
 .bg-chef {
     display: fixed;
-    flex-direction: column;
-    padding-top: 3em;
-    padding-bottom: 3em;
     min-height: 85%;
     margin: 0em;
     position: relative;
@@ -51,9 +47,9 @@ nav a:link {
 
 .bg-chef:before {
     content: "";
-    background-image: url(penandthesword.png);
+    background-image: url(/images/penandthesword.png);
     position: absolute;
-    background-size:contain;
+    background-size: contain;
     background-repeat: repeat;
     background-attachment: scroll;
     top: 0;
@@ -70,14 +66,12 @@ h1 {
     color: rgb(0, 0, 0);
     padding-top: 2.5em;
     text-align: center;
+    margin-top: 5rem;
 }
 
 p {
     color: black;
-}
-
-ul {
-    color: black;
+    text-align: center;
 }
 
 
@@ -89,42 +83,91 @@ section {
     font-size: 1.5em;
     color: rgb(0, 0, 0);
     position: static;
-
+    text-align: center;
 }
 
-section.about {
-   
-    width:60%;
-    float: right;
-    margin-bottom: 15rem;
+#skills {
+    font-weight: bold;
+    list-style: none;
 }
 
-.ecmlogo {
-float:left;
-width: 40%;
-margin-top: 5rem;
-
+#food {
+    border-radius: 45%;
+    flex-direction: column;
+    border: 1px solid black;
 }
 
-section.objective {
-width: 100%;
-float: inline;
-}
 
-section.myskillset {}
+/* JS styles */
+.form-style {
+    margin:10px auto;
+    width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .form-style td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+  }
+  .form-style .required{
+    color:red;
+  }
+  .form-style input[type=submit], .form-style input[type=reset]{
+    background: #4eb5f1;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+  }
+  .form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
+    background: #4eb5f1;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  .form-style .field-textarea{
+    height: 100px;
+  }
+  .form-style input[type=text], 
+  .form-style input[type=email],
+  textarea{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+  }
+  .form-style .long{
+    width: 100%;
+  }
+  .form-style input[type=text]:focus, 
+  .form-style input[type=email]:focus,
+  .form-style textarea:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+  }
+  .error{
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
 
-section.experience {
- display:flex;
+/* End JS styles*/
 
-
-
-
- 
-}
-
-section.myresume {}
-
-section.contact {}
 
 footer {
     display: block;
@@ -132,3 +175,80 @@ footer {
     bottom: 10px;
     text-align: center;
 }
+
+
+
+/*start  media query small */
+
+@media only screen and (min-width:480px) {
+
+    .menu {
+height: 5.5rem;
+    }
+
+    . {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size: 18px;
+        float: inline-end;}
+
+    .column {
+        width: 100%;
+    }
+}
+
+/* end of media query*/
+
+/*start  media query medium */
+
+@media only screen and (min-width: 600px) {
+    .menu{
+        height: 5.6rem;
+        font-size: 14pt;
+    }
+    
+        .btn {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 3px 6px;
+            cursor: pointer;
+            font-size: 18px;
+            float: inline-end;}
+    
+        .column {
+            margin-top: 2rem;
+        }
+
+}
+
+/* end of media query*/
+
+/*start  media query large */
+
+@media only screen and (min-width: 1024px) {
+
+.menu{
+    height: 5.5rem;
+    font-size: 20pt;
+}
+
+    .btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 22px;
+    float: inline-end;}
+
+    .column {
+
+        margin-top: 2rem;
+    }
+}
+
+/* end of media query*/
